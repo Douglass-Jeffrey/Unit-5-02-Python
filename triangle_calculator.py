@@ -16,17 +16,17 @@ def area(base, height):
 
 
 def main():
-    try:
-        while True:
-                # Input
-                base = int(input("Input the base of your triangle: "))
-                height = int(input("Input the height of your triangle: "))
+    while True:
+        try:
+            # Input
+            base = int(input("Input the base of your triangle: "))
+            height = int(input("Input the height of your triangle: "))
 
-                # Calls area function
-                area(base, height)
-                break
-    except Exception:
-        print("Please input proper numbers")
+            # Calls area function
+            area(base, height)
+            break
+        except Exception:
+            print("Please input proper numbers")
 
 
 if __name__ == "__main__":
